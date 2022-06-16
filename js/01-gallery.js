@@ -30,7 +30,7 @@ gallery.append(...image);
 
 gallery.addEventListener("click", handlerClick);
 
-let instance; // Цікаво
+let instance;
 
 function handlerClick(event) {
   event.preventDefault();
@@ -44,13 +44,3 @@ function handlerClick(event) {
   `);
   instance.show();
 }
-
-window.addEventListener("keydown", close);
-
-function close(event) {
-  if (event.key === "Escape") {
-    instance.close();
-  }
-}
-
-// window.removeEventListener("keydown", close);
